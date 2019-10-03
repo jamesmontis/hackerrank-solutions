@@ -1,3 +1,5 @@
+#From hackerrank discussions, saved for studying purposes
+#
 #Consider a list (list = []). You can perform the following commands:
 #
 #    insert i e: Insert integer #
