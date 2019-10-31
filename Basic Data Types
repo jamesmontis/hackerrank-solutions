@@ -1,5 +1,8 @@
+// working c++ soln to HackerRank Data Types ? 10-30-2019
+
 #include <iostream>
 #include <cstdio>
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -10,7 +13,8 @@ int main() {
     float d;
     double e;
     cin >> a >> b >> c >> d >> e;
-    cout << a << endl << b << endl << c << endl << d << endl << e<< endl;
+    cout << setprecision(9) << a << endl << b << endl << c << endl << d << endl << e << endl;
+
 
     return 0;
 }
