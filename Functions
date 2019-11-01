@@ -1,0 +1,35 @@
+// takes inputs a,b,c,d finds greatest number
+// assigns it to e, then returns e in main
+//
+// all solutions are submitted verified thru HackerRank as working
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+
+int max_of_four(int, int, int, int, int);
+
+int max_of_four(int a, int b, int c, int d)
+{
+    int e = 0;
+    if (a > b && a > c && a > d)
+        e = a;
+    else if (b > a && b > c && b > d)
+        e = b;
+    else if (c > a && c > b && c > d)
+        e = c;
+    else if (d > a && d > b && d >> c)
+        e = d;
+    return e;
+}
+
+int main() {
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
+
